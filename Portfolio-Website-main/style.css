@@ -11,19 +11,18 @@ body{
 }
 
 .header{
-    /* text-decoration: none; */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: transparent;
+    background-color: #10375C; /* Different color for the bar */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 100; /* Ensures it stays above other elements */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
 }
-
 .logo{
     font-size: 25px;
     color: white;
@@ -36,7 +35,7 @@ body{
 
 .navbar a{
     font-size: 18px;
-    color: #10375C;
+    color: #EB8317;
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
@@ -47,10 +46,18 @@ body{
 
 }
 
-.navbar a:hover,
-.navbar a.active{
-    color: #EB8317;
+.navbar a:hover{
+    color: #F3C623;
+    transition: color 0.1s ease-in-out;
 
+}
+.navbar a:focus {
+    color: #F3C623; 
+    transition: color 0.1s ease-in-out;
+}
+
+.navbar a {
+    transition: color 0.1s ease-in-out 0.5s; 
 }
 
 .home{
